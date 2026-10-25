@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ow_background">#050608</color>
+    <color name="ow_terminal_background">#000000</color>
+    <color name="ow_surface">#11151D</color>
+    <color name="ow_surface_raised">#191F2A</color>
+    <color name="ow_text_primary">#E6EAF2</color>
+    <color name="ow_text_secondary">#929CAD</color>
+    <color name="ow_accent">#7597FF</color>
+    <color name="ow_border">#29313E</color>
+    <color name="ow_success">#54C6A5</color>
+    <color name="ow_warning">#E7B45A</color>
+    <color name="ow_error">#E56B75</color>
+</resources>

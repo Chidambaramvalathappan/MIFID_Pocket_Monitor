@@ -1,0 +1,6 @@
+<resources>
+    <!-- Base application theme using native Android fullscreen theme with Obsidian Workshop background. -->
+    <style name="Theme.MIFIDPocketMonitor" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/ow_background</item>
+    </style>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions required for passive read-only monitoring -->
+    <!-- 1. INTERNET: Required on Android Linux to create network sockets for NetworkInterface ioctls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 2. ACCESS_NETWORK_STATE: Inspect active network connectivity, IP routes, interfaces -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 3. ACCESS_WIFI_STATE: Read Wi-Fi connection info and adapter status -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 4. READ_PHONE_STATE: Inspect cellular network type, operator, SIM state, data connection state -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 5. BLUETOOTH: Inspect local Bluetooth adapter state and availability -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.MIFIDPocketMonitor">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
